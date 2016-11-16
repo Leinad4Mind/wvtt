@@ -4,7 +4,7 @@
 	<p>
 		<!-- IF S_ENABLE_POPUP --><span style="font-weight: bold;"><a href="{URL_POPUP}" onclick="popup(this.href, 1000, 600, '_wvtt'); return false;">{L_WVTT_DETAILS}</a>&nbsp;-&nbsp;</span><!-- ENDIF -->
 		<!-- BEGIN userrow -->
-		<span><a href="{userrow.URL}">{userrow.USERNAME_FULL}</a></span><!-- IF S_DISPLAY_COUNTER --> ({userrow.VISITS})<!-- ENDIF --><!-- IF not userrow.S_LAST_ROW -->, <!-- ENDIF -->
+		<span>{userrow.USERNAME_FULL}</span><!-- IF S_DISPLAY_COUNTER --> ({userrow.TOPIC_VISITS})<!-- ENDIF --><!-- IF not userrow.S_LAST_ROW -->, <!-- ENDIF -->
 		<!-- END userrow -->
 	</p>
 </div>
